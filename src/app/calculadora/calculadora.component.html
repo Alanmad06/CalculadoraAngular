@@ -1,0 +1,28 @@
+<div class="container my-5 ">
+    <h1>Calculadora</h1>
+<div class="row ">
+    <div class="col-md-6">
+<div class="form-group">
+    <label>Numero 1 :</label>
+    <input class="form-control my-2" type="number" [(ngModel)]="num1">
+
+
+    <label>Numero 2 :</label>
+    <input class="form-control my-2 " type="number" [(ngModel)]="num2">
+
+    <button class="btn btn-outline-success my-2 mx-2" (click)="sumar()">Sumar</button>
+    <button class="btn btn-outline-primary  mx-2 " (click)="restar()">Restar</button>
+    <button class="btn btn-outline-danger  mx-2" (click)="multi()">Multiplicar</button>
+    <button class="btn btn-outline-info mx-2" (click)="div()">Multiplicar</button>
+
+    <p class="my-2" >Resultado :{{resultado}}</p>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
