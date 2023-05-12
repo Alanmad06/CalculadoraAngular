@@ -1,34 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculadora',
   templateUrl: './calculadora.component.html',
-  styleUrls: ['./calculadora.component.css']
+  styleUrls: ['./calculadora.component.css'],
 })
 export class CalculadoraComponent {
-  num1=0
-  num2=0
-  resultado=0
+  @Output() resultadoEmit = new EventEmitter<number>();
+  num1 :number;
+  num2 :number;
+  
 
-  sumar(){
-
-    this.resultado= this.num1+this.num2;
-
+  sumar() {
+    let resultado = this.num1 + this.num2;
+    this.resultadoEmit.emit(resultado);
   }
-  multi(){
-
-    this.resultado= this.num1*this.num2;
-
+  multi() {
+    let resultado = this.num1 * this.num2;
+    this.resultadoEmit.emit(resultado);
   }
-  div(){
-
-    this.resultado= this.num1/this.num2;
-
+  div() {
+    let resultado = this.num1 / this.num2;
+    this.resultadoEmit.emit(resultado);
   }
-  restar(){
-
-    this.resultado= this.num1-this.num2;
-
+  restar() {
+    let resultado = this.num1 - this.num2;
+    this.resultadoEmit.emit(resultado);
   }
-
 }
