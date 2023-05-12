@@ -1,3 +1,6 @@
+En el caso de Bootstrap se utilizo directamente el que yo tengo instalado en mis carpetas fuera del proyecto , en caso de querer utilizarlo hacer uso del comando npm install bootstrap y agregarlo al documento 
+angular.json en la seccion build en style para el css y scripts para el js
+
 # Calculadora
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
